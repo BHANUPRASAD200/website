@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Work Beetle - services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/sty.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 20px 0;
+            animation: slideDown 1s ease-in-out;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: #a777e3 !important;
+        }
+        .overview h1, .choose-us h2 {
+            color: #6e8efb;
+            animation: fadeIn 2s;
+        }
+        .overview img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            animation: zoomIn 1.5s;
+        }
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            border-radius: 10px 10px 0 0;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            border: none;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #a777e3, #6e8efb);
+            transform: translateY(-3px);
+        }
+        
+        .card-body{
+            background-color: #f0f0f0;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Work Beetle</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 ml-lg-3">
+                        <div class="input-group">
+                            <input class="form-control" type="search" placeholder="Search for a service..." aria-label="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="paper-work.jpg" class="card-img-top img-fluid" alt="Documentation and Paper Works">
+                    <div class="card-body">
+                        <h5 class="card-title">Documentation and Paper Works</h5>
+                        <p class="card-text">Thorough documentation is crucial for project success. We provide comprehensive documentation services, including project reports, research papers, & technical support, adhering to industry standards  guidelines.</p>
+                        <a href="DocumentationandPaperWorks.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Web Application.png" class="card-img-top img-fluid" alt="Web Application Development">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Application Development</h5>
+                        <p class="card-text">In today's digital era, web applications play a crucial role in various domains. We design and develop custom web applications tailored to the specific needs of our clients, ensuring seamless functionality and user experience.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Final_Year_Project.jpg" class="card-img-top img-fluid" alt="Final Year Project Modules">
+                    <div class="card-body">
+                        <h5 class="card-title">Final Year Project Modules</h5>
+                        <p class="card-text">We offer complete working modules for final year projects, tailored to the specific requirements of each student or team. Our expert team assists in every stage, from ideation to implementation, ensuring high-quality outcomes.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Patent Services.jpg" class="card-img-top img-fluid" alt="Patent Services">
+                    <div class="card-body">
+                        <h5 class="card-title">Patent Services:</h5>
+                        <p class="card-text">Intellectual property protection is vital. We assist in patent research, drafting, and filing to safeguard innovative ideas and technologies developed during projects. 
+                            Our team ensures all legal and technical requirements are met for a smooth and efficient patenting process, providing comprehensive support from start to finish.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Journal Works.jpg" class="card-img-top img-fluid" alt="Journal Works">
+                    <div class="card-body">
+                        <h5 class="card-title">Journal Works:</h5>
+                        <p class="card-text">Publishing research findings in reputable journals enhances credibility and visibility.
+                            We offer support in preparing and submitting manuscripts to esteemed academic journals.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Staff Development.png" class="card-img-top img-fluid" alt="Staff Development">
+                    <div class="card-body">
+                        <h5 class="card-title">Staff Development:</h5>
+                        <p class="card-text">Continuous learning is key to organizational growth. We provide training and workshops for staff members to enhance their 
+                            skills and stay updated with the latest advancements in their fields.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <img src="Mini and Long-Term Courses.png" class="card-img-top img-fluid" alt="Mini and Long-Term Courses">
+                    <div class="card-body">
+                        <h5 class="card-title"> Mini and Long-Term Courses:</h5>
+                        <p class="card-text">Our curated courses cater to diverse skill levels and interests, ranging from short-term workshops 
+                        to comprehensive long-term programs. Participants gain practical insights and hands-on experience under the 
+                        guidance of industry experts.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <img src="Coding Works.jpeg" class="card-img-top img-fluid" alt="Coding works">
+                <div class="card-body">
+                    <h5 class="card-title"> Coding works:</h5>
+                    <p class="card-text">Our skilled developers offer coding support across various programming languages and platforms, 
+                        ensuring robust and efficient implementations for project requirements.We also provide debugging and optimization 
+                        services to improve the performance and reliability of your code.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Work Beetle. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

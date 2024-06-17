@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Work Beetle</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow-x: hidden;
+    }
+    header {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: white;
+        padding: 20px 0;
+        animation: slideDown 1s ease-in-out;
+    }
+    .navbar-brand, .nav-link {
+        color: white !important;
+    }
+    .nav-link:hover {
+        color: #a777e3 !important;
+    }
+    .search-container {
+        display: flex;
+        align-items: center;
+    }
+    .search-container input[type="text"] {
+        padding: 5px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+    .search-container button {
+        padding: 5px 10px;
+        background: white;
+        color: #6e8efb;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.3s;
+    }
+    .search-container button:hover {
+        background: #a777e3;
+        color: white;
+        transform: translateY(-3px);
+    }
+    main {
+        padding: 20px;
+    }
+    .about, .overview {
+        margin-bottom: 40px;
+    }
+    .overview ul {
+        padding-left: 20px;
+    }
+    .highlight {
+        font-weight: bold;
+        color: #6e8efb;
+    }
+    footer {
+        background-color: #6e8efb;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        animation: fadeInUp 1s ease-in-out;
+        background-color: #f0f0f0;
+        height: 100%;
+    }
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+        border-radius: 10px 10px 0 0;
+        max-height: 200px;
+        object-fit: cover;
+    }
+    .btn-primary {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        border: none;
+        transition: background 0.3s, transform 0.3s;
+    }
+    .btn-primary:hover {
+        background: linear-gradient(135deg, #a777e3, #6e8efb);
+        transform: translateY(-3px);
+    }
+    @keyframes slideDown {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fadeInUp {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+</head>
+
+<body>
+<header class="text-center">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Work Beetle</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 ml-lg-3">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search for a service..." aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="container mt-5">
+    <section class="about text-center">
+        <h2>About Our Company</h2>
+        <p>Work Beetle is a dynamic and innovative technology company specializing in mobile app development, web app development, 
+            AI chatbot solutions, AI-related automation, and a variety of services tailored for students, including engineering projects and patent services. 
+            Our mission is to deliver cutting-edge technology solutions that drive efficiency, enhance user experience, and foster innovation.
+        </p>
+    </section>
+
+    <section class="overview text-center">
+        <h2>Overview of Our Services</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="./f.jpg" alt="Final Year Project Modules">
+                    <div class="card-body">
+                        <h3 class="card-title">Final Year Project Modules</h3>
+                        <p class="card-text">Tailored project modules for students' final year projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="./do.jpg" alt="Documentation and Paper Works">
+                    <div class="card-body">
+                        <h3 class="card-title">Documentation and Paper Works</h3>
+                        <p class="card-text">Comprehensive documentation services for project reports and research papers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDE1fHxjb2Rpbmd8ZW58MHx8fHwxNjgzNTUyMjE3&ixlib=rb-1.2.1&q=80&w=400" alt="Coding Works">
+                    <div class="card-body">
+                        <h3 class="card-title">Coding Works</h3>
+                        <p class="card-text">Skilled coding support across various programming languages and platforms.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="./ps.jpg" alt="Patent Services">
+                    <div class="card-body">
+                        <h3 class="card-title">Patent Services</h3>
+                        <p class="card-text">Assistance in patent research, drafting, and filing to safeguard innovative ideas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="./jw.jpg" alt="Journal Works">
+                    <div class="card-body">
+                        <h3 class="card-title">Journal Works</h3>
+                        <p class="card-text">Support in publishing research findings in reputable academic journals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHRyYWluaW5nfGVufDB8fHx8MTY1MzI3OTYxMw&ixlib=rb-1.2.1&q=80&w=400" alt="Staff Development">
+                    <div class="card-body">
+                        <h3 class="card-title">Staff Development</h3>
+                        <p class="card-text">Training and workshops for staff members to enhance their skills.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="./co.jpg" alt="Courses">
+                    <div class="card-body">
+                        <h3 class="card-title">Courses</h3>
+                        <p class="card-text">Curated courses catering to diverse skill levels and interests.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                <div class="card flex-fill">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fHdlYnxlbnwwfHx8fDE2NTMyNzk3NTU&ixlib=rb-1.2.1&q=80&w=400" alt="Web Application Development">
+                    <div class="card-body">
+                        <h3 class="card-title">Web Application Development</h3>
+                        <p class="card-text">Custom web application design and development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Work Beetle. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
